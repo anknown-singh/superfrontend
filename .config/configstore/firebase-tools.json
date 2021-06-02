@@ -1,0 +1,47 @@
+{
+	"analytics-uuid": "5c42b727-aaab-4709-b312-428f64d88d32",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1622627725500
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "103788256875615581191",
+		"email": "kaurnavneet0370@gmail.com",
+		"email_verified": true,
+		"at_hash": "nGiI1zHW4sAaj-YaWdmwLw",
+		"iat": 1618739625,
+		"exp": 1618743225
+	},
+	"tokens": {
+		"expires_at": 1622631900275,
+		"refresh_token": "1//0gPSbfxLaE8_HCgYIARAAGBASNwF-L9IrPwGyhSuqgXpxsnGNsmpD97au1lLdpsaqFAHejjmqhCXZ828I9v-3gOkJm0zS17CX0O8",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.a0AfH6SMCoYiex7CllTr6cLt479bu3tUueFwbdxB8Z5xCyV3Llw2hJYQWKnp3qF5zkq1RU6bSDxhwVN9fUw7NyowBYg5VpmLk0CXIU-qiA_tcw2hPRHkhq9CHC2wjms5cQmrbScolKKn0aUksyWmCSc3oW1zV3zAMC7g0t9G8",
+		"expires_in": 3599,
+		"scope": "https://www.googleapis.com/auth/firebase openid https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE3MTllYjk1N2Y2OTU2YjU4MThjMTk2OGZmMTZkZmY3NzRlNzA4ZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNzg4MjU2ODc1NjE1NTgxMTkxIiwiZW1haWwiOiJrYXVybmF2bmVldDAzNzBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ5UFVFNWpBQXVHZVpsT3R2WE5EMzd3IiwiaWF0IjoxNjIyNjI4MzAxLCJleHAiOjE2MjI2MzE5MDF9.AeniQVEdIwDHTvZrW_vHr406VUefp9jupzbnrTpuSDHTfOwSyc0qIp5_guHCJVyg83i00sXCP9ebef0c9fentgsYGWfk8tE8iFl8ooJXR_yVaZ1Nv8HDjAZTc7fvHdZdPGs3hRznQ7wYSrww5fbKnAEwWrXV78aNhN382VoJZ1dTj607mg95ZGIrTpYVETk5xAC-k9Tb0v5KjzX9QTBKBnt0YHGS2YqfbFLTo-5Z1ecj2ylZfmujT59dRuxAQvJlCb2OyXl8-uquT-c2pcPvR1joEnIV_Cmk18r2Ee1cXCzTRuyE4XuUMrq_IBAwbrS0PPrVTDWcLAciqH06FKjVMw"
+	},
+	"activeProjects": {
+		"C:\\Users\\HP\\Dropbox\\My PC (DESKTOP-51M1LKG)\\Desktop\\student-management": "student-management-syste-7a4c6",
+		"C:\\Users\\HP\\Dropbox\\My PC (DESKTOP-51M1LKG)\\Desktop\\student-management\\main-dashboard": "student-management-syste-7a4c6",
+		"C:\\Users\\HP\\Dropbox\\My PC (DESKTOP-51M1LKG)\\Desktop\\frontpage\\page": "mg-website-3d222",
+		"D:\\todo-app": "angular-to-do-list-34c21"
+	}
+}

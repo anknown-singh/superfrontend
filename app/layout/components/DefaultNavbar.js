@@ -17,7 +17,7 @@ export const DefaultNavbar = () => (
     <Navbar light expand="xs" fluid>
         <Nav navbar>
             <NavItem className="mr-3">
-                <SidebarTrigger/>
+                <SidebarTrigger />
             </NavItem>
             <NavItem className="navbar-brand d-lg-none">
                 <Link to="/">

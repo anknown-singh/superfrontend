@@ -59,58 +59,58 @@ export default defineConfig({
     //   name: 'privacyPolicy',
     //   component: './Policy',
     // },
-    // {
-    //   path: '/',
-    //   component: '../layouts/UserLayout',
-    //   // component: '../layouts/SecurityLayout',
-    //   routes: [
-    //     {
-    //       path: '/',
-    //       // component: '../layouts/BasicLayout',
-    //       routes: [
-    //         {
-    //           path: '/',
-    //           redirect: '/home',
-    //         },
-    //         {
-    //           path: '/home',
-    //           name: 'home',
-    //           component: '../layouts/LayoutPro',
-    //           routes: [
-    //             {
-    //               path: '/home',
-    //               component: './Home',
-    //             },
-    //           ],
-    //         },
-    //         // {
-    //         //   path: '/profile',
-    //         //   name: 'profile',
-    //         //   component: '../layouts/LayoutPro',
-    //         //   // component: '../layouts/SecurityLayout',
-    //         //   routes: [
-    //         //     {
-    //         //       path: '/profile',
-    //         //       component: './Profile',
-    //         //     },
-    //         //   ],
-    //         // },
-    //         // {
-    //         //   path: '/user-profile',
-    //         //   name: 'user-profile',
-    //         //   component: './UserProfile',
-    //         //   hideInMenu: true,
-    //         // },
-    //         {
-    //           component: './404',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       component: './404',
-    //     },
-    //   ],
-    // },
+    {
+      path: '/',
+      component: '../src/pages/Pages/TestComponent',
+      // component: '../layouts/SecurityLayout',
+      // routes: [
+      //   {
+      //     path: '/',
+      //     // component: '../layouts/BasicLayout',
+      //     routes: [
+      //       {
+      //         path: '/',
+      //         redirect: '/home',
+      //       },
+      //       {
+      //         path: '/home',
+      //         name: 'home',
+      //         component: '../layouts/LayoutPro',
+      //         routes: [
+      //           {
+      //             path: '/home',
+      //             component: './Home',
+      //           },
+      //         ],
+      //       },
+      //       // {
+      //       //   path: '/profile',
+      //       //   name: 'profile',
+      //       //   component: '../layouts/LayoutPro',
+      //       //   // component: '../layouts/SecurityLayout',
+      //       //   routes: [
+      //       //     {
+      //       //       path: '/profile',
+      //       //       component: './Profile',
+      //       //     },
+      //       //   ],
+      //       // },
+      //       // {
+      //       //   path: '/user-profile',
+      //       //   name: 'user-profile',
+      //       //   component: './UserProfile',
+      //       //   hideInMenu: true,
+      //       // },
+      //       {
+      //         component: './404',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     component: './404',
+      //   },
+      // ],
+    },
     // {
     //   component: './404',
     // },

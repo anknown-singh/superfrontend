@@ -138,6 +138,6 @@ module.exports = {
       index: BASE_PATH,
     },
     host: "127.0.0.1",
-    port: 8000,
+    port: 80,
   },
 };

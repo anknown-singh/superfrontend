@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Container,
   Row,
@@ -29,7 +29,6 @@ const progressCompletion = ["25", "50", "75", "97"];
 /*eslint-enable */
 
 const TestComponent = () => {
-  const [data, setData] = useState(190);
   return (
     <Container>
       <Row className="mb-2">

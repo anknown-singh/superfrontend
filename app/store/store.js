@@ -5,7 +5,7 @@ import axios from "axios";
 import reducer from "./reducers";
 import rootSaga from "./sagas";
 
-axios.defaults.baseURL = "https://reqres.in/api";
+axios.defaults.baseURL = "http://localhost:8000";
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(reducer, applyMiddleware(sagaMiddleware));

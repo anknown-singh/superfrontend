@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import _ from "lodash";
+
 import classNames from "classnames";
 import FileDrop from "react-dropzone";
+import Dropzone, { Preview } from "react-dropzone-uploader";
 
 import {
   Navbar,
@@ -22,6 +24,7 @@ import { NavbarMessages } from "./NavbarMessages";
 import { NavbarUser } from "./NavbarUser";
 import { LogoThemed } from "./../../routes/components/LogoThemed/LogoThemed";
 import { FilesGrid, FilesList } from "../../routes/Forms/Dropzone/components";
+import axios from "axios";
 
 export class DefaultNavbar extends React.Component {
   state = {
@@ -29,6 +32,20 @@ export class DefaultNavbar extends React.Component {
     files: [],
     listStyle: "list",
   };
+  upload() {
+    const file = this.state.files;
+    const config = { headers: { "Content-Type": "multipart/form-data" } };
+    var formData = new FormData();
+    console.log(file, "file");
+    formData.append("File", file.file);
+    console.log(formData, "formData");
+    axios
+      .post("/", {
+        body: file,
+        headers: { "Content-Type": "multipart/form-data" },
+      })
+      .then((response) => console.log(response));
+  }
 
   render() {
     const { isOver, files, listStyle } = this.state;
@@ -38,6 +55,9 @@ export class DefaultNavbar extends React.Component {
       },
       "dropzone"
     );
+    const getUploadParams = ({ meta }) => {
+      return { url: "http://localhost:8000" };
+    };
 
     return (
       <Navbar light expand="xs" fluid>
@@ -86,15 +106,15 @@ export class DefaultNavbar extends React.Component {
         <div>
           <UncontrolledModal target="modalDefault101">
             <ModalBody>
-              <FileDrop
-                multiple
+              <Dropzone
+                getUploadParams={getUploadParams}
+                PreviewComponent={null}
                 onDragEnter={() => {
                   this.setState({ isOver: true });
                 }}
                 onDragLeave={() => {
                   this.setState({ isOver: false });
                 }}
-                onDrop={this._filesDropped}
               >
                 {({ getRootProps, getInputProps }) => (
                   <div {...getRootProps()} className={dropzoneClass}>
@@ -112,7 +132,7 @@ export class DefaultNavbar extends React.Component {
                     <input {...getInputProps()} />
                   </div>
                 )}
-              </FileDrop>
+              </Dropzone>
 
               {files.length > 0 && (
                 <div className="mt-2">

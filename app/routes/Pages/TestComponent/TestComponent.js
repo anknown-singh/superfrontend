@@ -336,7 +336,6 @@ const TestComponent = () => {
             </CardBody>
           </Card>
         </Col>
-        <Test />
       </Row>
     </Container>
   );

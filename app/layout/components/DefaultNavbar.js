@@ -4,7 +4,7 @@ import _ from "lodash";
 
 import classNames from "classnames";
 import FileDrop from "react-dropzone";
-import Dropzone, { Preview } from "react-dropzone-uploader";
+import Dropzone from "react-dropzone-uploader";
 
 import {
   Navbar,
@@ -59,6 +59,31 @@ export class DefaultNavbar extends React.Component {
       return { url: "http://localhost:8000" };
     };
 
+    const Layout = ({
+      input,
+      previews,
+      submitButton,
+      dropzoneProps,
+      files,
+      extra: { maxFiles },
+    }) => {
+      return (
+        <div {...dropzoneProps}>
+          <i className="fa fa-cloud-upload fa-fw fa-3x mb-3"></i>
+          <h5 className="mt-0">Upload Your files</h5>
+          <p>
+            Drag a file here or <span className="text-primary">browse</span> for
+            a file to upload.
+          </p>
+          <p className="small">
+            JPG, GIF, PNG, MOV, and AVI. Please choose files under 2GB for
+            upload. File sizes are 400x300px.
+          </p>
+          {files.length < maxFiles && input}
+        </div>
+      );
+    };
+
     return (
       <Navbar light expand="xs" fluid>
         <Nav navbar>
@@ -108,31 +133,12 @@ export class DefaultNavbar extends React.Component {
             <ModalBody>
               <Dropzone
                 getUploadParams={getUploadParams}
-                PreviewComponent={null}
-                onDragEnter={() => {
-                  this.setState({ isOver: true });
+                classNames={{
+                  dropzone: "dropzone",
                 }}
-                onDragLeave={() => {
-                  this.setState({ isOver: false });
-                }}
-              >
-                {({ getRootProps, getInputProps }) => (
-                  <div {...getRootProps()} className={dropzoneClass}>
-                    <i className="fa fa-cloud-upload fa-fw fa-3x mb-3"></i>
-                    <h5 className="mt-0">Upload Your files</h5>
-                    <p>
-                      Drag a file here or{" "}
-                      <span className="text-primary">browse</span> for a file to
-                      upload.
-                    </p>
-                    <p className="small">
-                      JPG, GIF, PNG, MOV, and AVI. Please choose files under 2GB
-                      for upload. File sizes are 400x300px.
-                    </p>
-                    <input {...getInputProps()} />
-                  </div>
-                )}
-              </Dropzone>
+                LayoutComponent={Layout}
+                accept="application/vnd.ms-excel, text/csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/xml, text/xml"
+              ></Dropzone>
 
               {files.length > 0 && (
                 <div className="mt-2">

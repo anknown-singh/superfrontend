@@ -1,105 +1,89 @@
-import React from 'react';
+import React from "react";
 
-import { SidebarMenu } from './../../components';
+import { SidebarMenu } from "./../../components";
 
 export const SidebarMiddleNav = () => (
-    <SidebarMenu>
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-diamond" aria-hidden="true"></i>}
-            title="CRM"
-        >
-            <SidebarMenu.Item title="Dashboard" to='/pages/test' exact />
-            <SidebarMenu.Item title="Custom Dashboard" exact />
-            <SidebarMenu.Item title="Leads" exact />
-            <SidebarMenu.Item title="Opportunities" exact />
-            <SidebarMenu.Item title="Persons" exact />
-            <SidebarMenu.Item title="Companies" exact />
-            <SidebarMenu.Item title="Reports" exact />
-            <SidebarMenu.Item title="Orders" exact />
-            <SidebarMenu.Item title="Invoices" exact />
-            <SidebarMenu.Item title="Payments" exact />
-            <SidebarMenu.Item title="InvoiceAging" exact />
-            <SidebarMenu.Item title="Tasks" exact />
+  <SidebarMenu>
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-diamond" aria-hidden="true"></i>}
+      title="CRM"
+    >
+      <SidebarMenu.Item title="Dashboard" to="/pages/test" exact />
+      <SidebarMenu.Item title="Custom Dashboard" exact />
+      <SidebarMenu.Item title="Leads" exact />
+      <SidebarMenu.Item title="Opportunities" exact />
+      <SidebarMenu.Item title="Persons" exact />
+      <SidebarMenu.Item title="Companies" exact />
+      <SidebarMenu.Item title="Reports" exact />
+      <SidebarMenu.Item title="Orders" exact />
+      <SidebarMenu.Item title="Invoices" exact />
+      <SidebarMenu.Item title="Payments" exact />
+      <SidebarMenu.Item title="InvoiceAging" exact />
+      <SidebarMenu.Item title="Tasks" exact />
+    </SidebarMenu.Item>
 
-        </SidebarMenu.Item>
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-rocket" aria-hidden="true"></i>}
+      title="Project"
+    ></SidebarMenu.Item>
 
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-rocket" aria-hidden="true"></i>}
-            title="Project"
-        >
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-user" aria-hidden="true"></i>}
+      title="HR"
+    ></SidebarMenu.Item>
 
-        </SidebarMenu.Item>
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-shopping-cart"></i>}
+      title="Purchases"
+    ></SidebarMenu.Item>
 
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-user" aria-hidden="true"></i>}
-            title="HR"
-        >
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-briefcase"></i>}
+      title="Accounting"
+    >
+      <SidebarMenu.Item title="Analytics" to="/dashboards/analytics" exact />
+      <SidebarMenu.Item title="Projects" to="/dashboards/projects" exact />
+      <SidebarMenu.Item title="System" to="/dashboards/system" exact />
+      <SidebarMenu.Item title="Monitor" to="/dashboards/monitor" exact />
+      <SidebarMenu.Item title="Financial" to="/dashboards/financial" exact />
+      <SidebarMenu.Item title="Stock" to="/dashboards/stock" exact />
+      <SidebarMenu.Item title="Reports" to="/dashboards/reports" exact />
+    </SidebarMenu.Item>
 
-        </SidebarMenu.Item>
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-money"></i>}
+      title="Payroll"
+    ></SidebarMenu.Item>
 
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-shopping-cart"></i>}
-            title="Purchases"
-        >
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-bar-chart"></i>}
+      title="Analysis"
+    ></SidebarMenu.Item>
 
-        </SidebarMenu.Item>
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-line-chart"></i>}
+      title="Stock Management"
+    ></SidebarMenu.Item>
 
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-briefcase"></i>}
-            title="Accounting"
-        >
-            <SidebarMenu.Item title="Analytics" to='/dashboards/analytics' exact />
-            <SidebarMenu.Item title="Projects" to='/dashboards/projects' exact />
-            <SidebarMenu.Item title="System" to='/dashboards/system' exact />
-            <SidebarMenu.Item title="Monitor" to='/dashboards/monitor' exact />
-            <SidebarMenu.Item title="Financial" to='/dashboards/financial' exact />
-            <SidebarMenu.Item title="Stock" to='/dashboards/stock' exact />
-            <SidebarMenu.Item title="Reports" to='/dashboards/reports' exact />
-
-        </SidebarMenu.Item>
-
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-money"></i>}
-            title="Payroll"
-        >
-
-        </SidebarMenu.Item>
-
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-bar-chart"></i>}
-            title="Analysis"
-        >
-
-        </SidebarMenu.Item>
-
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-line-chart"></i>}
-            title="Stock Management"
-        >
-
-        </SidebarMenu.Item>
-
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-gear (alias)"></i>}
-            title="Settings"
-        >
-
-        </SidebarMenu.Item>
-        {/* <SidebarMenu.Item
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-gear (alias)"></i>}
+      title="Settings"
+    ></SidebarMenu.Item>
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-th"></i>}
             title="Widgets"
             to='/widgets'
         /> */}
-        { /* -------- Cards ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Cards ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-clone"></i>}
             title="Cards"
         >
             <SidebarMenu.Item title="Cards" to='/cards/cards' exact />
             <SidebarMenu.Item title="Cards Headers" to='/cards/cardsheaders' exact />
         </SidebarMenu.Item> */}
-        { /* -------- Layouts ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Layouts ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-columns"></i>}
             title="Layouts"
         >
@@ -109,8 +93,8 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Sidebar With Navbar" to="/layouts/sidebar-with-navbar" exact />
             <SidebarMenu.Item title="Drag &amp; Drop" to='/layouts/dnd-layout' exact />
         </SidebarMenu.Item> */}
-        { /* -------- Interface ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Interface ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-toggle-on"></i>}
             title="Interface"
         >
@@ -137,15 +121,15 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Drag &amp; Drop Elements" to='/interface/drag-and-drop-elements' />
             <SidebarMenu.Item title="Calendar" to='/interface/calendar' />
         </SidebarMenu.Item> */}
-        { /* -------- Graphs ---------*/}
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-pie-chart"></i>}
-            title="Graphs"
-        >
-            <SidebarMenu.Item title="ReCharts" to='/graphs/re-charts' />
-        </SidebarMenu.Item>
-        { /* -------- Forms ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Graphs ---------*/}
+    <SidebarMenu.Item
+      icon={<i className="fa fa-fw fa-pie-chart"></i>}
+      title="Graphs"
+    >
+      <SidebarMenu.Item title="ReCharts" to="/graphs/re-charts" />
+    </SidebarMenu.Item>
+    {/* -------- Forms ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-check-square-o"></i>}
             title="Forms"
         >
@@ -161,8 +145,8 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Dropzone" to='/forms/dropzone' />
             <SidebarMenu.Item title="Sliders" to='/forms/sliders' />
         </SidebarMenu.Item> */}
-        { /* -------- Tables ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Tables ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-trello"></i>}
             title="Tables"
         >
@@ -170,12 +154,12 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Extended Tables" to='/tables/extended-table' />
             <SidebarMenu.Item title="AgGrid" to='/tables/ag-grid' />
         </SidebarMenu.Item> */}
-        { /* -------- Apps ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Apps ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-mouse-pointer"></i>}
             title="Apps"
         > */}
-        {/* <SidebarMenu.Item title="Projects">
+    {/* <SidebarMenu.Item title="Projects">
                 <SidebarMenu.Item title="Projects List" to="/apps/projects/list" />
                 <SidebarMenu.Item title="Projects Grid" to="/apps/projects/grid" />
             </SidebarMenu.Item>
@@ -219,8 +203,8 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Clients" to="/apps/clients" exact />
             <SidebarMenu.Item title="Chat" to="/apps/chat" exact />
         </SidebarMenu.Item> */}
-        { /* -------- Pages ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Pages ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-copy"></i>}
             title="Pages"
         >
@@ -235,18 +219,18 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Coming Soon" to="/pages/coming-soon" />
             <SidebarMenu.Item title="Timeline" to="/pages/timeline" />
         </SidebarMenu.Item>*/}
-        <SidebarMenu.Item
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-star-o"></i>}
             title="Icons"
             to='/icons'
-        />
-        {/* <SidebarMenu.Item
+        /> */}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-bookmark-o"></i>}
             title="Docs"
             href='https://webkom.gitbook.io/spin/v/airframe/airframe-react/documentation-react'
         />  */}
-        { /* -------- Versions ---------*/}
-        {/* <SidebarMenu.Item
+    {/* -------- Versions ---------*/}
+    {/* <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-folder-open-o"></i>}
             title="Versions"
         >
@@ -257,5 +241,5 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Angular" to="http://dashboards.webkom.co/angular/airframe" />
             <SidebarMenu.Item title=".NET MVC" to="http://dashboards.webkom.co/net-mvc/airframe" />
         </SidebarMenu.Item> */}
-    </SidebarMenu >
+  </SidebarMenu>
 );

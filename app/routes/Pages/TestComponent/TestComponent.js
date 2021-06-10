@@ -23,6 +23,7 @@ import { PieChartWithPaddingAngle } from "../../Graphs/ReCharts/components/PieCh
 import { SimpleLineChart } from "../../Graphs/ReCharts/components/SimpleLineChart";
 import { CustomizedLabelLineChart } from "../../Graphs/ReCharts/components/CustomizedLabelLineChart";
 import Test from "./Test";
+import { Progress } from "reactstrap";
 
 /*eslint-disable */
 const progressCompletion = ["25", "50", "75", "97"];
@@ -45,7 +46,7 @@ const TestComponent = () => {
                 <span className="large ml-4 text-secondary">23.1.2021</span>
               </CardTitle>
 
-              <Row className="py-2">
+              <Row>
                 <Col sm={12}>
                   <Media>
                     <Media body>
@@ -76,29 +77,29 @@ const TestComponent = () => {
                 </Col>
               </Row>
 
-              <Row className="py-2">
-                <Col sm={3}>
+              <Row className="py-2 d-flex justify-content-between">
+                <Col>
                   <SessionsByDevice
                     title="Processing"
                     valuePercent="4"
                     valuePercentColor="text-primary"
                   />
                 </Col>
-                <Col sm={3}>
+                <Col>
                   <SessionsByDevice
                     title="Invoiced"
                     valuePercent="15"
                     valuePercentColor="text-info"
                   />
                 </Col>
-                <Col sm={3}>
+                <Col>
                   <SessionsByDevice
                     title="New Order"
                     valuePercent="56"
                     valuePercentColor="text-success"
                   />
                 </Col>
-                <Col sm={3}>
+                <Col>
                   <SessionsByDevice
                     title="Unlinked"
                     valuePercent="78"
@@ -106,125 +107,67 @@ const TestComponent = () => {
                   />
                 </Col>
               </Row>
-              {/* <Progress multi className="mb-2" style={{ height: "5px" }}>
-                            <Progress bar value="25" />
-                            <Progress bar color="info" value="30" />
-                            <Progress bar color="secondary" value="35" />
-                        </Progress> */}
             </CardBody>
 
             <CardFooter className="small">
               <i className="fa fa-fw fa-info-circle mr-2"></i>
               <span className="large text-primary">View All</span>
-              {/* How do your users (visitors), sessions (visits) and pageviews
-                        metrics for <abbr title="attribute">www.webkom.com</abbr> compare to your targets over the last 30 days? */}
             </CardFooter>
           </Card>
         </Col>
         <Col lg={6}>
-          <Row>
-            <Col lg={12}>
-              <Card className="mb-3">
-                <Row>
-                  <Col lg={6}>
-                    <CardBody>
-                      <div className="d-flex">
-                        <div>
-                          <h6 className="card-title mb-1">
-                            SimpleBarChart
-                            <span className="small ml-1 text-muted">#1.01</span>
-                          </h6>
-                          <p>Bar Charts</p>
-                        </div>
-                        <span className="ml-auto">
-                          <Button
-                            color="link"
-                            href="https://jsfiddle.net/alidingling/30763kr7/"
-                            target="_blank"
-                          >
-                            <i className="fa fa-external-link"></i>
-                          </Button>
-                        </span>
-                      </div>
-                      <SimpleBarChart />
-                    </CardBody>
-                  </Col>
-                  <Col lg={6}>
-                    <CardBody>
-                      <div className="d-flex">
-                        <div>
-                          <h6 className="card-title mb-1">
-                            SimpleBarChart
-                            <span className="small ml-1 text-muted">#1.01</span>
-                          </h6>
-                          <p>Bar Charts</p>
-                        </div>
-                        <span className="ml-auto">
-                          <Button
-                            color="link"
-                            href="https://jsfiddle.net/alidingling/30763kr7/"
-                            target="_blank"
-                          >
-                            <i className="fa fa-external-link"></i>
-                          </Button>
-                        </span>
-                      </div>
-                      <SimpleBarChart />
-                    </CardBody>
-                  </Col>
-                </Row>
-
-                <Row>
-                  <Col lg={6}>
-                    <CardBody>
-                      <div className="d-flex">
-                        <div>
-                          <h6 className="card-title mb-1">
-                            SimpleBarChart
-                            <span className="small ml-1 text-muted">#1.01</span>
-                          </h6>
-                          <p>Bar Charts</p>
-                        </div>
-                        <span className="ml-auto">
-                          <Button
-                            color="link"
-                            href="https://jsfiddle.net/alidingling/30763kr7/"
-                            target="_blank"
-                          >
-                            <i className="fa fa-external-link"></i>
-                          </Button>
-                        </span>
-                      </div>
-                      <SimpleBarChart />
-                    </CardBody>
-                  </Col>
-                  <Col lg={6}>
-                    <CardBody>
-                      <div className="d-flex">
-                        <div>
-                          <h6 className="card-title mb-1">
-                            SimpleBarChart
-                            <span className="small ml-1 text-muted">#1.01</span>
-                          </h6>
-                          <p>Bar Charts</p>
-                        </div>
-                        <span className="ml-auto">
-                          <Button
-                            color="link"
-                            href="https://jsfiddle.net/alidingling/30763kr7/"
-                            target="_blank"
-                          >
-                            <i className="fa fa-external-link"></i>
-                          </Button>
-                        </span>
-                      </div>
-                      <SimpleBarChart />
-                    </CardBody>
-                  </Col>
-                </Row>
-              </Card>
-            </Col>
-          </Row>
+          <Card className="mb-3">
+            <CardBody>
+              <CardTitle tag="h4" className="mb-5">
+                Sessions by Device Type
+              </CardTitle>
+              <Row className=" py-4 d-flex justify-content-between">
+                <Col>
+                  <SessionsByDevice
+                    title="Desktop"
+                    valuePercent="51,5"
+                    valuePercentColor="text-primary"
+                    value="201,335"
+                    valueColor="text-primary"
+                  />
+                </Col>
+                <Col>
+                  <SessionsByDevice
+                    title="Mobile"
+                    valuePercent="33,3"
+                    valuePercentColor="text-info"
+                    value="133,201"
+                    valueColor="text-info"
+                  />
+                </Col>
+                <Col>
+                  <SessionsByDevice
+                    title="Tablet"
+                    valuePercent="20,8"
+                    value="81,525"
+                  />
+                </Col>
+                <Col>
+                  <SessionsByDevice
+                    title="Tablet"
+                    valuePercent="20,8"
+                    value="81,525"
+                  />
+                </Col>
+              </Row>
+              {/* <Progress multi className="mb-2" style={{ height: "5px" }}>
+                <Progress bar value="25" />
+                <Progress bar color="info" value="30" />
+                <Progress bar color="secondary" value="45" />
+              </Progress> */}
+            </CardBody>
+            <CardFooter className="small">
+              <i className="fa fa-fw fa-info-circle mr-2"></i>
+              How do your users (visitors), sessions (visits) and pageviews
+              metrics for <abbr title="attribute">www.webkom.com</abbr> compare
+              to your targets over the last 30 days?
+            </CardFooter>
+          </Card>
         </Col>
       </Row>
       <Row>

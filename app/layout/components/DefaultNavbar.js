@@ -137,6 +137,7 @@ export class DefaultNavbar extends React.Component {
                   dropzone: "dropzone",
                 }}
                 LayoutComponent={Layout}
+                inputContent=""
                 accept="application/vnd.ms-excel, text/csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/xml, text/xml"
               ></Dropzone>
 
